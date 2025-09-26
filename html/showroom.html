@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+</head>
+<body class="showroom-page">
+    <div class="showroom-page">
+        <div class="img-container">
+            <img class="showroom-jumbotron" src="/assets/showroom-jumbrotron.jpg" alt="Showroom">
+            <div class="overlay">
+                <header>
+                    <a href="index.html" class="logo"><img class="logo-img" src="/assets/LOGO.png"
+                            alt="DiamondCut Motors"></a>
+                    <div class="nav">
+                        <a href="/html/index.html">Home</a>
+                        <a href="/html/cars.html">Cars</a>
+                        <a href="/html/showroom.html">Showrooms</a>
+                        <a href="/html/about.html">About</a>
+                        <a href="/html/login.html">Login</a>
+                    </div>
+                    <div class="toggle-button">
+                        <img class="toggle-button-img" src="/assets/menu_bar-removebg-preview.png" alt="Menu">
+                    </div>
+                    <div class="dropdown-menu hidden">
+                        <a href="/html/index.html">Home</a>
+                        <a href="/html/cars.html">Cars</a>
+                        <a href="/html/showroom.html">Showrooms</a>
+                        <a href="/html/about.html">About</a>
+                        <a href="/html/login.html">Login</a>
+                    </div>
+                </header>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const toggleButton = document.querySelector('.toggle-button-img');
+                        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+                        toggleButton.onclick = function () {
+                            dropdownMenu.classList.toggle('hidden');
+                        }
+                    });
+                </script>
+    
+                <div class="img-background-content">
+                    <h1>Exquisite Cars, Unmatched Service</h1>
+                    <h1>– Only at DiamondCut Motors</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured">
+        <h1>Our Showrooms:</h1>
+        <h2>"World class experience across the country"</h2>
+    </div>
+    
+    <section class="carousel-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide" id="slide-1">
+                    <img src="/assets/showroom1.jpg" alt="">
+                    <div class="slide-text">Santa Monica, Los Angeles</div>
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="/assets/gallery6.jpg" alt="">
+                    <div class="slide-text">Henderson, Las Vegas</div>
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="/assets/showroom3.jpg" alt="">
+                    <div class="slide-text">South Beach, Miami</div>
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="/assets/about-image2.jpg" alt="">
+                    <div class="slide-text">Rochester, New York</div>
+                </div>
+            </div>
+    
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-container">
+        <h1>Showrooms Gallery:</h1>
+
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery1.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery2.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery3.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery4.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery5.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery6.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery7.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery8.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery10.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic">
+                <img src="/assets/gallery11.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    
+        <h3>©2024 DiamondCut Motors</h3>
+    </div>
+
+    
+</body>
+</html>

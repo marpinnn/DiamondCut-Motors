@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+</head>
+
+<body class="index-body">
+    <div class="vid-container">
+        <video autoplay muted loop>
+            <source src="/assets/home-video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <header>
+                <a href="index.html" class="logo"><img class="logo-img" src="/assets/LOGO.png"
+                        alt="DiamondCut Motors"></a>
+                <div class="nav">
+                    <a href="/html/index.html">Home</a>
+                    <a href="/html/cars.html">Cars</a>
+                    <a href="/html/showroom.html">Showrooms</a>
+                    <a href="/html/about.html">About</a>
+                    <a href="/html/login.html">Login</a>
+                </div>
+                <div class="toggle-button">
+                    <img class="toggle-button-img" src="/assets/menu_bar-removebg-preview.png" alt="">
+                </div>
+                <div class="dropdown-menu">
+                    <a href="/html/index.html">Home</a>
+                    <a href="/html/cars.html">Cars</a>
+                    <a href="/html/showroom.html">Showrooms</a>
+                    <a href="/html/about.html">About</a>
+                    <a href="/html/login.html">Login</a>
+                </div>
+            </header>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggleButton = document.querySelector('.toggle-button-img');
+                    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+                    toggleButton.onclick = function () {
+                        dropdownMenu.classList.toggle('hidden');
+                    }
+                });
+            </script>
+            
+            <div class="background-content">
+                <h1>Precision in Luxury,</h1>
+                <h1>Excellence in Motion</h1>
+                <h3>DiamondCut Motors, your premier destination</h3>
+                <h3>for the world's most exquisite and luxurious automobiles.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured">
+        <h1>Featured Models:</h1>
+        <h2>"The best of the best"</h2>
+    </div>
+
+    <section class="carousel-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide" id="slide-1">
+                    <img src="/assets/car-slide1.jpg" alt="">
+                    <div class="slide-text">Nissan GTR R35</div>
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="/assets/car-slide2.jpg" alt="">
+                    <div class="slide-text">Mercedes Benz AMG GT</div>
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="/assets/car-slide3.jpg" alt="">
+                    <div class="slide-text">Lamborghini Aventador</div>
+                </div>
+                <div class="slide" id="slide-4">
+                    <img src="/assets/car-slide4.jpg" alt="">
+                    <div class="slide-text">Porsche Cayenne</div>
+                </div>
+                <div class="slide" id="slide-5">
+                    <img src="/assets/car-slide5.jpg" alt="">
+                    <div class="slide-text">BMW i7</div>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+    <div class="shop-button-container">
+        <button class="shop-button"><a href="cars.html">Shop Now</a></button>
+    </div>
+</body>
+
+<div class="footer">
+    <div class="icons">
+        <a href="https://twitter.com/" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+    <h3>©2024 DiamondCut Motors</h3>
+</div>
+
+</html>

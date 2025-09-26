@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <body class="about-body">
+        <header class="about-header">
+            <a href="index.html" class="logo"><img class="logo-img" src="/assets/LOGO.png" alt="DiamondCut Motors"></a>
+            <div class="nav">
+                <a href="/html/index.html">Home</a>
+                <a href="/html/cars.html">Cars</a>
+                <a href="/html/showroom.html">Showrooms</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/login.html">Login</a>
+            </div>
+            <div class="toggle-button">
+                <img class="toggle-button-img" src="/assets/menu_bar-removebg-preview.png" alt="Menu">
+            </div>
+            <div class="dropdown-menu hidden">
+                <a href="/html/index.html">Home</a>
+                <a href="/html/cars.html">Cars</a>
+                <a href="/html/showroom.html">Showrooms</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/login.html">Login</a>
+            </div>
+        </header>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleButton = document.querySelector('.toggle-button-img');
+                const dropdownMenu = document.querySelector('.dropdown-menu');
+
+                toggleButton.onclick = function () {
+                    dropdownMenu.classList.toggle('hidden');
+                }
+            });
+        </script>
+
+    <div class="partners">
+        <h1>Our Partners:</h1>
+        <h3>"Partnering with the best in the automotive industry"</h3>
+    </div>
+
+    <section class="cars-container">
+        <div class="cars-slider-wrapper">
+            <div class="cars-slider">
+                <div class="cars-slide" id="cars-slide-1">
+                    <img src="/assets/partner1-removebg-preview.png" alt="">
+                </div>
+                <div class="cars-slide" id="cars-slide-2">
+                    <img src="/assets/partner2.png" alt="hihi">
+                </div>
+                <div class="cars-slide" id="cars-slide-3">
+                    <img src="/assets/partner3-removebg-preview.png" alt="">
+                </div>
+                <div class="cars-slide" id="cars-slide-4">
+                    <img src="/assets/partner4-removebg-preview.png" alt="">
+                </div>
+            </div>
+    
+            <div class="cars-slider-nav">
+                <a href="#cars-slide-1"></a>
+                <a href="#cars-slide-2"></a>
+                <a href="#cars-slide-3"></a>
+                <a href="#cars-slide-4"></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const cars_slider = document.querySelector('.cars-slider');
+            const cars_slides = document.querySelectorAll('.cars-slide');
+            const cars_navLinks = document.querySelectorAll('.cars-slider-nav a');
+            let currentIndex = 0;
+            const totalSlides = cars_slides.length;
+
+            function showSlide(index) {
+                const offset = index * cars_slider.offsetWidth;
+                cars_slider.scrollTo({ left: offset, behavior: 'smooth' });
+                cars_navLinks.forEach((link, idx) => {
+                    link.style.opacity = idx === index ? '1' : '0.5';
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showSlide(currentIndex);
+            }
+
+            setInterval(nextSlide, 10000);
+
+            cars_navLinks.forEach((link, index) => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    currentIndex = index;
+                    showSlide(index);
+                });
+            });
+
+            showSlide(currentIndex);
+    </script>
+
+    <div class="wrapper">
+        <div class="category-filter">
+            <div class="container">
+                <div class="title">
+                    <h1>MotorCut Vehicles</h1>
+                    <h3>"The perfect vehicles for you"</h3>
+                </div>
+    
+                <div class="filter-buttons">
+                    <button type="button" class="filter-button" id="all">All</button>
+                    <button type="button" class="filter-button" id="new">New</button>
+                    <button type="button" class="filter-button" id="used">Used</button>
+                </div>
+    
+                <div class="card-container">
+                    <div class="card all new">
+                        <img src="/assets/cars_new1.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Nissan</h1>
+                            <h1>GTR R35</h1>
+                            <h3>New</h3>
+                            <h3>$121,090 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new2.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Lamborghini</h1>
+                            <h1>Aventador</h1>
+                            <h3>New</h3>
+                            <h3>$507,353 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new3.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Mercedes</h1>
+                            <h1>AMG GT</h1>
+                            <h3>New</h3>
+                            <h3>$136,050 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new4.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Porsche</h1>
+                            <h1>Cayenne S</h>
+                            <h3>New</h3>
+                            <h3>$97,870 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new5.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">BMW</h1>
+                            <h1>i7 M70</h1>
+                            <h3>New</h3>
+                            <h3>$168,500 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new6.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Lamborghini</h1>
+                            <h1>Urus</h>
+                            <h3>New</h3>
+                            <h3>$241,843 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all new">
+                        <img src="/assets/cars_new7.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">McLaren</h1>
+                            <h1>Artura</h>
+                            <h3>New</h3>
+                            <h3>$240,208 msrp</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all used">
+                        <img src="/assets/cars_used1.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Toyota</h1>
+                            <h1>GR Supra</h>
+                            <h3>Used</h3>
+                            <h3>$64,998 (2700 miles)</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all used">
+                        <img src="/assets/cars_used2.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Porsche</h1>
+                            <h1>911</h>
+                            <h3>Used</h3>
+                            <h3>$115,760 (3400 miles)</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all used">
+                        <img src="/assets/cars_used3.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">BMW</h1>
+                            <h1>M4 CSL</h>
+                            <h3>Used</h3>
+                            <h3>$94,550 (6800 miles)</h3>
+                        </div>
+                    </div>
+    
+                    <div class="card all used">
+                        <img src="/assets/cars_used4.png" alt="">
+                        <div class="card-content">
+                            <h1 class="brand">Chevrolet</h1>
+                            <h1>Corvette</h3>
+                            <h3>Used</h3>
+                            <h3>$139,995 (2906 miles)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const allFilterItems = document.querySelectorAll('.card');
+        const allFilterButton = document.querySelectorAll('.filter-button');
+        allFilterButton.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                showFilteredContent(btn);
+            });
+        });
+        function showFilteredContent(btn) {
+            allFilterItems.forEach((item) => {
+                if (item.classList.contains(btn.id)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+            resetActiveBtn();
+            btn.classList.add('active-btn');
+        }
+        function resetActiveBtn() {
+            allFilterButton.forEach((btn) => {
+                btn.classList.remove('active-btn');
+            });
+        }
+    </script>
+
+    <div class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    
+        <h3>©2024 DiamondCut Motors</h3>
+    </div>
+
+
+</body>
+</html>

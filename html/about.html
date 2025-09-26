@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+</head>
+
+<body class="about-body">
+    <header class="about-header">
+        <a href="index.html" class="logo"><img class="logo-img" src="/assets/LOGO.png" alt="DiamondCut Motors"></a>
+        <div class="nav">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/cars.html">Cars</a>
+            <a href="/html/showroom.html">Showrooms</a>
+            <a href="/html/about.html">About</a>
+            <a href="/html/login.html">Login</a>
+        </div>
+        <div class="toggle-button">
+            <img class="toggle-button-img" src="/assets/menu_bar-removebg-preview.png" alt="Menu">
+        </div>
+        <div class="dropdown-menu hidden">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/cars.html">Cars</a>
+            <a href="/html/showroom.html">Showrooms</a>
+            <a href="/html/about.html">About</a>
+            <a href="/html/login.html">Login</a>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-button-img');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+
+            toggleButton.onclick = function () {
+                dropdownMenu.classList.toggle('hidden');
+            }
+        });
+    </script>
+
+    <div class="photo-container">
+        <img src="/assets/login-picture.jpg" class="car-img" alt="">
+        <div class="overlay">
+    
+            <div class="img-background-content">
+                <h1>Our Story</h1>
+            
+            </div>
+        </div>
+    </div>
+    <div class="our-history">
+        <h3>DiamondCut Motors was founded in 2005 by (-----), a car enthusiast with a vision to create the ultimate
+        destination for luxury and exotic automobiles. With a small showroom in Beverly Hills, California, DiamondCut Motors aimed to
+        offer discerning customers a curated selection of the finest cars in the world.</h3>
+        <h3>Within three years, DiamondCut Motors had established a reputation for excellence, attracting clients from all over
+        the
+        United States. The company expanded its showroom to accommodate a growing inventory of exclusive vehicles, including
+        brands like Ferrari, Lamborghini, and Bentley.</h3>
+        <h3>By 2015, DiamondCut Motors had become a household name among luxury car aficionados. The company opened a second
+        showroom in Miami, Florida, catering to the East Coast market. This expansion solidified DiamondCut Motors' position
+        as
+        a leading dealership for exotic cars in the United States.</h3>
+        <h3>Today, DiamondCut Motors continues to thrive, with a commitment to providing the finest luxury and exotic vehicles.
+        The
+        company is dedicated to staying at the forefront of the automotive industry, embracing new technologies and trends
+        to
+        offer unparalleled service and selection.</h3>
+    </div>
+
+    <div class="vision-section">
+        <div class="vision">
+            <h1>Worldwide Premier Destination</h1>
+            <h3>At DiamondCut Motors, our vision is to be the premier destination for luxury and exotic automobiles
+                worldwide. We aim to redefine the automotive experience by providing unparalleled quality, innovation, and
+                service. Our goal is to create a legacy of excellence, setting new standards in the industry and inspiring
+                the next generation of automotive enthusiasts.</h3>
+        </div>
+        <div class="img-container1">
+            <img src="/assets/car-slide1.jpg" alt="Car Image">
+        </div>
+    </div>
+    
+    <div class="mission-section">
+        <div class="img-container1">
+            <img src="/assets/about-image2.jpg" alt="Car Image">
+        </div>
+        <div class="mission">
+            <h1>The Ultimate Luxury Experience</h1>
+            <h3>Our mission at DiamondCut Motors is to deliver the ultimate luxury car experience by offering an exceptional
+                selection of the finest vehicles, personalized services, and a commitment to excellence. We strive to exceed
+                our customers' expectations through innovation, integrity, and a passion for perfection. Every interaction
+                with DiamondCut Motors is designed to reflect our dedication to quality, performance, and customer
+                satisfaction.</h3>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h1>Socials:</h1>
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>©2024 DiamondCut Motors</h3>
+    </div>
+
+</body>
+</html>
